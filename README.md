@@ -1675,7 +1675,7 @@ console.log(myRect.getArea());
 
 ```
 
-**Note:**Abstract classes cannot be directly instantiated, as they do not have all their members implemented.
+**Note:** Abstract classes cannot be directly instantiated, as they do not have all their members implemented.
 
 ## Type Generics
 
