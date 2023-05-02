@@ -128,9 +128,8 @@ let e: undefined = undefined;
 
 let f: boolean = true;
 
-**NOTE**: In data types, any is a special data-type, also the super data-type of all data types. If a variable is declared with any data type then we can assign any type value to that variable.
 
-TypeScript supports some simple types (primitives) you may know.
+TypeScript supports some **simple** types (primitives) you may know.
 
 There are three main primitives in JavaScript and TypeScript.
 
@@ -152,6 +151,8 @@ console.log(myNumber); // 42
 console.log(myBoolean); // true
 
 ```
+
+**NOTE**: In data types, any is a special data-type, also the super data-type of all data types. If a variable is declared with any data type then we can assign any type value to that variable.
 
 **Examples:**
 
@@ -402,6 +403,29 @@ Undefined
 Object
 
 ```
+
+## Type Inference
+
+Type inference is a feature of TypeScript that allows the compiler to automatically determine the type of a variable based on its value, without the need for explicit type annotations.
+
+Here's a simple example of type inference in TypeScript:
+
+```
+let myString = "Hello, TypeScript!";
+let myNumber = 42;
+let myBoolean = true;
+
+console.log(typeof myString); // "string"
+console.log(typeof myNumber); // "number"
+console.log(typeof myBoolean); // "boolean"
+
+```
+
+In this example, we define three variables without explicitly declaring their types using a type annotation. 
+
+Instead, TypeScript infers the types of these variables based on their assigned values.
+
+We then log the typeof each variable to the console, which shows us the inferred type.
 
 ## TypeScript Arrays
 
@@ -845,6 +869,44 @@ const car: { type: string, mileage?: number } = { // no error
   type: "Toyota"
 };
 car.mileage = 2000;
+
+```
+
+#### Nested Objects
+
+Nested objects refer to objects that are properties of other objects. In other words, an object can contain one or more properties that are themselves objects.
+
+Here's a simple example of a nested object in TypeScript:
+
+**Example:**
+
+```
+interface Person {
+  name: string;
+  age: number;
+  address: {
+    street: string;
+    city: string;
+    zip: string;
+  };
+}
+const person: Person = {
+  name: "Alice",
+  age: 30,
+  address: {
+    street: "123 Main St",
+    city: "Anytown",
+    zip: "12345"
+  }
+};
+console.log(person.address.street); // "123 Main St"
+
+```
+
+**Output:**
+
+```
+"123 Main St"
 
 ```
 
