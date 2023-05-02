@@ -16,6 +16,17 @@
 
 ## Installation & Setup
 
+**Prerequisites**
+
+For this project, you will need:
+
+* A basic  understanding of JavaScript. 
+
+* Visual Studio Code (VS Code) downloaded and installed.
+
+* Node.js installed locally, which you can do by following How to Install Node.js and Create a Local Development Environment.
+
+
 In order to Install the Typescript one must install node.js on his computer system
 
 **Step 1**: Go to the start menu and click on the command prompt.
