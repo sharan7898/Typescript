@@ -100,6 +100,74 @@ This will create a compiled JS file from that typescript file. And now to run th
 
 ![installation5](/images/installation6.png)
 
+## How to Run TS on Visual Studio 
+
+**1- Necessary installations**
+
+To be able to create and run TypeScript applications on Visual Studio Code, make sure that the following software is installed on your computer:
+
+* Install Visual Studio Code on Windows
+
+* Install TypeScript on Windows
+
+**2-TypeScript File Creation**
+
+To write and run TypeScript code in Visual Studio Code, you need to create a TypeScript file within your project folder.
+
+On your computer create a new empty folder to store the project. Such as:
+
+C:\Users\MicroApt\OneDrive\Desktop\example
+
+To create a TypeScript file, follow these steps:
+
+a. Launch Visual Studio Code and open or create a new folder for your TypeScript project.
+
+b. Click on the "New File" icon in the explorer view or use the Ctrl+N shortcut to create a new file.
+
+c. Save the file with a .ts extension, e.g., demo.ts
+
+Now that you have created a TypeScript file, you can write some TypeScript code in the file. 
+
+![step1](/images/Screenshot%20(30).png)
+
+Next, we need to configure to run the above example.
+
+**3- Project Configuration**
+
+On Visual Studio Code open a Terminal window:
+
+* View > Terminal
+
+On a Terminal window, execute the following command to create a configuration file for your project:
+
+**tsc –init**
+
+![step2](/images/Screenshot%20(31).png)
+
+If u have got the error like this open the git bash and run the above command
+
+![step3](/images/Screenshot%20(32).png)
+
+![step4](/images/Screenshot%20(33).png)
+
+After executing the above command, the tsconfig.json file is created:
+
+Next, on the Terminal window of Visual Studio Code, execute the command to compile all your typescript files into javascript files.
+
+**tsc**
+
+![step5](/images/Screenshot%20(34).png)
+
+Finally, run the example. 
+
+**node demo.js**
+
+![step6](/images/Screenshot%20(35).png)
+
+
+
+
+
 ## TypeScript Types
 
 TypeScript supports some simple types (primitives).
@@ -2375,7 +2443,7 @@ console.log(multiply(2, 3)); // 6
 
 ```
 
-In summary, modules in TypeScript allow us to organize and reuse code across different parts of our application. We can use the export keyword to make variables, functions, and classes available for use in other modules, and the import keyword to import them into other modules. Default exports allow us to export a single value from a module as the default export
+In summary, modules in TypeScript allow us to organize and reuse code across different parts of our application. We can use the export keyword to make variables, functions, and classes available for use in other modules, and the import keyword to import them into other modules. Default exports allow us to export a single value from a module as the default export.
 
 
 
