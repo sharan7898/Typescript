@@ -130,6 +130,29 @@ let f: boolean = true;
 
 **NOTE**: In data types, any is a special data-type, also the super data-type of all data types. If a variable is declared with any data type then we can assign any type value to that variable.
 
+TypeScript supports some simple types (primitives) you may know.
+
+There are three main primitives in JavaScript and TypeScript.
+
+* boolean - true or false values
+
+* number - whole numbers and floating point values
+
+* string - text values like "TypeScript Rocks"
+
+**Example:**
+
+```
+let myString: string = "Hello, TypeScript!";
+let myNumber: number = 42;
+let myBoolean: boolean = true;
+
+console.log(myString); // "Hello, TypeScript!"
+console.log(myNumber); // 42
+console.log(myBoolean); // true
+
+```
+
 **Examples:**
 
 let a: any = null;
@@ -2272,6 +2295,26 @@ console.log(math.pi); // 3.14
 
 ```
 In this case, we have imported all exports from the math module into an object named math, which we can then use to access the exported functions and constants.
+
+Modules in TypeScript can also have default exports, which allow us to export a single value from a module as the default export. For example:
+
+```
+export default function multiply(a: number, b: number): number {
+  return a * b;
+}
+
+```
+
+In this case, we have exported a single function named multiply as the default export. This can be imported using the import statement without using curly braces:
+
+```
+import multiply from "./math";
+console.log(multiply(2, 3)); // 6
+
+```
+
+In summary, modules in TypeScript allow us to organize and reuse code across different parts of our application. We can use the export keyword to make variables, functions, and classes available for use in other modules, and the import keyword to import them into other modules. Default exports allow us to export a single value from a module as the default export
+
 
 
 
