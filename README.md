@@ -1,4 +1,5 @@
 # Typescript
+
 ## Introduction to Typescript
  
 * TypeScript is an Open Source Object oriented programming language developed and maintained by Microsoft Corporation. 
@@ -35,13 +36,13 @@ In order to Install the Typescript one must install node.js on his computer syst
 
 Run the following command in the same NodeJS command prompt to install the typescript:
 
-<!-- style="color:yellow;" --> **npm install --global typescript**
+**npm install --global typescript**
 
 ![intsallation1](/images/installation1.png)
 
 The above command will install the typescript onto our local system. To verify the installation, run the following command:
 
-<!-- style="color:yellow;" -->tsc -v
+**tsc -v**
 
 Here tsc is a typescript compiler and the -v flag indicates that we are displaying the version of the typescript as shown in the image.
 
@@ -49,7 +50,7 @@ At this point, typescript is successfully installed onto your system.
 
 **Step 3**: To install a specific version of a typescript, use the following command with ‘@’ followed by version.
 
-<!-- style="color:yellow;" -->npm install --global typescript@4.x.x
+**npm install --global typescript@4.x.x**
 
 Here, ‘x’ can be changed with the version that we want to install, as shown in the image below:
 
@@ -57,7 +58,7 @@ Here, ‘x’ can be changed with the version that we want to install, as shown 
 
 **Step 4**: To uninstall typescript, use the same command that is used to install the typescript and replace the installation with uninstall.
 
-<!-- style="color:yellow;" -->npm uninstall --global typescript
+**npm uninstall --global typescript**
 
 ![installation3](/images/installation3.png)
 
@@ -69,13 +70,13 @@ Now, let’s create a simple project through typescript:
 
 **Step 2**: Open up the NodeJS command prompt and navigate to the folder path that we created in step 1.
 
-<!-- style="color:yellow;" -->cd “C:\Users\MicroApt\Desktop\helloworldex”
+**cd “C:\Users\MicroApt\Desktop\helloworldex”**
 
 ![installation4](/images/installation4.png)
 
 **Step 3**: Run the Initialization command in that command prompt to create the necessary configuration file for our simple project.
 
-<!-- style="color:yellow;" -->tsc - -init
+**tsc - -init**
 
 ![installation5](/images/installation5.png)
 
@@ -97,7 +98,7 @@ helloWorld ="Typescript is successfully installed";
 console.log(helloWorld);
 ```
 
-The above code should be pasted and saved in the main.ts file before executing the typescript compiler.
+The above code should be pasted and saved in the example.ts file before executing the typescript compiler.
 
 **Step 5**: Run the typescript compiler with the file name as an argument to see results.
 
@@ -105,7 +106,7 @@ The above code should be pasted and saved in the main.ts file before executing t
 
 This will create a compiled JS file from that typescript file. And now to run the JS file we will be using the NodeJS as below.
 
-**node main.js**
+**node example.js**
 
 **Output:**
 
@@ -139,7 +140,7 @@ c. Save the file with a .ts extension, e.g., demo.ts
 
 Now that you have created a TypeScript file, you can write some TypeScript code in the file. 
 
-![step1](/images/Screenshot%20(30).png)
+![step1](/images/vs1.png)
 
 Next, we need to configure to run the above example.
 
@@ -153,13 +154,13 @@ On a Terminal window, execute the following command to create a configuration fi
 
 **tsc –init**
 
-![step2](/images/Screenshot%20(31).png)
+![step2](/images/vs2.png)
 
 If u have got the error like this open the git bash and run the above command
 
-![step3](/images/Screenshot%20(32).png)
+![step3](/images/vs3.png)
 
-![step4](/images/Screenshot%20(33).png)
+![step4](/images/vs4.png)
 
 After executing the above command, the tsconfig.json file is created:
 
@@ -167,15 +168,13 @@ Next, on the Terminal window of Visual Studio Code, execute the command to compi
 
 **tsc**
 
-![step5](/images/Screenshot%20(34).png)
+![step5](/images/vs5.png)
 
 Finally, run the example. 
 
 **node demo.js**
 
-![step6](/images/Screenshot%20(35).png)
-
-
+![step6](/images/vs6.png) 
 
 
 
